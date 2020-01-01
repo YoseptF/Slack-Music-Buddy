@@ -1,18 +1,21 @@
 # frozen_string_literal: true
 
 require_relative '../config/environment'
+require 'dotenv/load'
 
 # comment
 class MyBot < SlackRubyBot::Bot
+  def self.block_skelly(type, text, emoji = nil)
+    the_block = { "type": type, "text": text }
+    the_block['enoji': emoji] unless emoji.nil?
+    the_block
+  end
+
   command(/.*\bhello\b.*$/i) do |client, data, _match|
     client.say(channel: data.channel, text: 'hi')
   end
 
   command(/.*\bquote\b.*$/i) do |client, data, _match|
-    # logger.info "#{client.owner}, user=#{data.user} - market sucks!"
-
-    # DIA (Dow Jones Industrial Average ETF) closely but not quite imiates the DOW
-
     client.web_client.chat_postMessage(
       channel: data.channel,
       as_user: true,
@@ -27,26 +30,11 @@ class MyBot < SlackRubyBot::Bot
         {
           "type": 'section',
           "fields": [
-            {
-              "type": 'mrkdwn',
-              "text": "*Type:*\nComputer (laptop)"
-            },
-            {
-              "type": 'mrkdwn',
-              "text": "*When:*\nSubmitted Aut 10"
-            },
-            {
-              "type": 'mrkdwn',
-              "text": "*Last Update:*\nMar 10, 2015 (3 years, 5 months)"
-            },
-            {
-              "type": 'mrkdwn',
-              "text": "*Reason:*\nAll vowel keys aren't working."
-            },
-            {
-              "type": 'mrkdwn',
-              "text": "*Specs:*\n\"Cheetah Pro 15\" - Fast, really fast\""
-            }
+            MyBot.block_skelly('mrkdwn', "*Type:*\nComputer (laptop)"),
+            MyBot.block_skelly('mrkdwn', "*When:*\nSubmitted Aut 10"),
+            MyBot.block_skelly('mrkdwn', "*Last Update:*\nMar 10, 2015 (3)"),
+            MyBot.block_skelly('mrkdwn', "*Reason:*\nvowel keys arent working"),
+            MyBot.block_skelly('mrkdwn', "*Specs:*\n\"Cheetah Pro 15\"\"")
           ]
         },
         {
