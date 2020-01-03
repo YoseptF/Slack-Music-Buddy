@@ -8,7 +8,7 @@ class Youtube
   # recieves a string and
   def self.youtube(search = 'beautifully')
     query = search.split(' ').join('%20')
-    r = "q=#{query}&key=#{ENV['YOUTUBE_API']}"
+    r = "q=#{query}&key=#{ENV['OTHER_API']}"
     complete = 'https://www.googleapis.com/youtube/v3/search?part=snippet&' + r
     uri = URI.parse(complete)
     request = Net::HTTP::Get.new(uri)
@@ -31,5 +31,3 @@ class Youtube
     "https://youtu.be/#{video_id}"
   end
 end
-
-Youtube.youtube('other things youtube bakbag')
