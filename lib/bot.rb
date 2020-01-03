@@ -6,12 +6,24 @@ require_relative 'spotify'
 
 # comment
 class MyBot < SlackRubyBot::Bot
-  def self.slack_bck(type, text, emoji = nil)
-    the_block = { "type": type, "text": text }
-    the_block['enoji': emoji] unless emoji.nil?
-    the_block
-  end
+  help do
+    title 'Music Buddy'
+    desc 'Your friendly neighbor, who knows a little bit too much about music'
 
+    command 'spotify' do
+      desc('Usage: `spotify` + `your search`' \
+        'Posts the best result for `your search` on spotify')
+      long_desc('Usage: `spotify` + `your search`' \
+        'Posts the best result for `your search` on spotify')
+    end
+
+    command 'youtube' do
+      desc('Usage: `youtube` + `your search`' \
+        'Posts the best result for `your search` on youtube')
+      long_desc('Usage: `youtube` + `your search`' \
+        'Posts the best result for `your search` on youtube')
+    end
+  end
   match(/^youtube\b.*$/i) do |client, data, _match|
     client.say(
       channel: data.channel,
