@@ -16,3 +16,9 @@ Your friendly neighbor, who knows a little bit too much about music
   `youtube + search`
 
 ![youtube command](./images/youtube.gif)
+
+---
+### Spotify
+  `spotify + search`
+
+![youtube command](./images/spotify.gif)
