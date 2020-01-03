@@ -47,6 +47,10 @@ class Spotify
       http.request(request)
     end
 
+    if JSON.parse(song_json.body)['tracks']['items'].length.zero?
+      return "I couldn't find anything with those parameters D:"
+    end
+
     JSON.parse(song_json.body)['tracks']['items'][0]['external_urls']['spotify']
   end
 end
