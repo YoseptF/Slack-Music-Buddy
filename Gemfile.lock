@@ -73,6 +73,7 @@ GEM
     nio4r (2.5.2)
     oj (3.10.0)
     public_suffix (4.0.2)
+    rake (13.0.1)
     slack-ruby-bot (0.12.0)
       hashie
       slack-ruby-client (>= 0.14.0)
@@ -101,6 +102,7 @@ DEPENDENCIES
   dotenv
   giphy
   httparty
+  rake
   slack-ruby-bot (~> 0.12.0)
 
 BUNDLED WITH
