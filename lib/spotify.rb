@@ -19,7 +19,11 @@ class Spotify
       use_ssl: c_uri.scheme == 'https'
     }
 
-    credentials = Net::HTTP.start(c_uri.hostname, c_uri.port, req_options) do |http|
+    credentials = Net::HTTP.start(
+      c_uri.hostname,
+      c_uri.port,
+      req_options
+    ) do |http|
       http.request(request)
     end
 
@@ -35,7 +39,11 @@ class Spotify
       use_ssl: s_uri.scheme == 'https'
     }
 
-    song_json = Net::HTTP.start(s_uri.hostname, s_uri.port, req_options) do |http|
+    song_json = Net::HTTP.start(
+      s_uri.hostname,
+      s_uri.port,
+      req_options
+    ) do |http|
       http.request(request)
     end
 

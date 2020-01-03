@@ -31,4 +31,3 @@ class Youtube
     "https://youtu.be/#{video_id}"
   end
 end
-
