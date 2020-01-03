@@ -5,10 +5,15 @@
 </div>
   </dl>
 
+## Test it yourself
+You can join the [**Example Inc. slack server**](https://join.slack.com/t/example-inc-hq/shared_invite/enQtODkyODYzMTE5OTU4LTdkYTgxZmVjNzY2MWJhMWY5NjRlZDJmMjdkOWNmMjI0N2M1ZDc5NGIyNjY0YzEwYmIyMGU2NmYzNDU4ODk4NzY) to test the bot yourself without downloading anything!!!
+
+---
 
 ## Before running
 Remember adding your own .env before runnning the bot locally, if you are hosting it on heroku, change the env variables on the site too
 
+---
 ## run command
   `rake deploy:run` or
   `heroku run rake deploy:run`
