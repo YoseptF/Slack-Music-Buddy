@@ -5,7 +5,7 @@ Here's the list of milestones for __Slack Music Buddy :__
 ---
 - [x] You can search for spotify songs directly from slack 
 - [x] You can search for youtube videos directly from slack
-- [ ] The bot displays its own commands
+- [x] The bot displays its own commands
 - [ ] The project passes every test from Rspec
 ## _Harder but doable :pick:_
 ---
