@@ -1,7 +1,9 @@
-<div class="headerWrapper" style="display:flex;flex-direction:column;align-items:center;margin:25px 0; text-align:center">
-<img src="./images/manback.png" style="width:10%; height: auto">
+<dl>
+  <div class="headerWrapper" style="display:flex;flex-direction:column;align-items:center;margin:25px 0; text-align:center">
+<img src="./images/manback.png" style="margin: 0 auto" height="100px" margin="auto">
 <h1>Your friendly neighbor, who knows a little bit too much about music</h1>
 </div>
+  </dl>
 
 
 ## Before running
