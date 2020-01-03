@@ -1,1 +1,1 @@
-worker: rake deploy:run
+release: rake deploy:run
