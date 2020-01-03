@@ -3,6 +3,8 @@
 require_relative '../config/environment'
 require_relative 'youtube'
 require_relative 'spotify'
+require 'dotenv'
+Dotenv.load '../.env'
 
 # comment
 class MyBot < SlackRubyBot::Bot

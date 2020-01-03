@@ -9,6 +9,7 @@ Here's the list of milestones for __Slack Music Buddy :__
 - [ ] The project passes every test from Rspec
 ## _Harder but doable :pick:_
 ---
+- [x] Bot is online, you don't need to run it locally
 - [ ] You can rate the music by style, and get recommendations based on the styles
 - [ ] The bot stores authorization tokens and only refreshes them when they exprire
 

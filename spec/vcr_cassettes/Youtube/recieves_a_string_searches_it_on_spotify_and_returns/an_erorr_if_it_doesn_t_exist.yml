@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/search?key=AIzaSyC_ICxdWq4KFkeWIxY-v4qo8qWxXTAmuEk&part=snippet&q=youtube%20search%20engineasd%20vqwionbrd3498%2023i%20bn35rb13qt5%2031285%20t1432q
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - www.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Fri, 03 Jan 2020 20:18:46 GMT
+      Date:
+      - Fri, 03 Jan 2020 20:18:46 GMT
+      Cache-Control:
+      - private, max-age=120, must-revalidate, no-transform
+      Etag:
+      - '"p4VTdlkQv3HQeTEaXgvLePAydmU/ardA5__VCsLjJTUP84hxzAbJivQ"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+        ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+        ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+         "kind": "youtube#searchListResponse",
+         "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/ardA5__VCsLjJTUP84hxzAbJivQ\"",
+         "regionCode": "MX",
+         "pageInfo": {
+          "totalResults": 0,
+          "resultsPerPage": 5
+         },
+         "items": []
+        }
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 20:18:46 GMT
+recorded_with: VCR 5.0.0
