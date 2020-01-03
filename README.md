@@ -8,6 +8,8 @@
 ## Test it yourself
 You can join the [**Example Inc. slack server**](https://join.slack.com/t/example-inc-hq/shared_invite/enQtODkyODYzMTE5OTU4LTdkYTgxZmVjNzY2MWJhMWY5NjRlZDJmMjdkOWNmMjI0N2M1ZDc5NGIyNjY0YzEwYmIyMGU2NmYzNDU4ODk4NzY) to test the bot yourself without downloading anything!!!
 
+(Keep in mind the bot is hosted on a free heroku account, so it sleeps 6 hours a day, from 12am to 6am timezone -6)
+
 ---
 
 ## Before running
