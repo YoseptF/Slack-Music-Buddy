@@ -22,3 +22,9 @@ Your friendly neighbor, who knows a little bit too much about music
   `spotify + search`
 
 ![youtube command](./images/spotify.gif)
+
+---
+### help
+  `@Music Buddy help`
+
+![youtube command](./images/help.gif)
