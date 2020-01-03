@@ -47,6 +47,8 @@ class Spotify
       http.request(request)
     end
 
-    JSON.parse(song_json.body)['tracks']['items'][0]['external_urls']['spotify']
+    puts JSON.parse(song_json.body)['tracks']['items'][0]['external_urls']['spotify']
   end
 end
+
+Spotify.search('sixteen tons')
