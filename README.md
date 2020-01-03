@@ -1,5 +1,10 @@
-# Slack-Music-Buddy
-Your friendly neighbor, who knows a little bit too much about music
+<dl>
+  <div class="headerWrapper" style="display:flex;flex-direction:column;align-items:center;margin:25px 0; text-align:center">
+<img src="./images/manback.png" style="margin: 0 auto" height="100px" margin="auto">
+<h1>Your friendly neighbor, who knows a little bit too much about music</h1>
+</div>
+  </dl>
+
 
 ## Before running
 Remember adding your own .env before runnning the bot locally, if you are hosting it on heroku, change the env variables on the site too
