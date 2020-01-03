@@ -1,0 +1,219 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - accounts.spotify.com
+      Authorization:
+      - Basic YjJhZDgwMzVlYTk0NDg4YmFlNGRkYWU1MDgwMTBhYmU6ZGZmYjczZDg1ZjUxNDExMmIzOTAzZDcyOWY1YmNlYzg=
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Jan 2020 20:16:31 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __Host-device_id=AQAz16OcTClS3RyMQ6XE6JtEroI2zlYVlCtVzc6sVSh26Jf_LnrYC58hcM6h2ZOnSL0a34uINVZ4dT0E16j51NUncczM4hqkhOo;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
+      Server:
+      - envoy
+      X-Envoy-Upstream-Service-Time:
+      - '3'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQALp0cyWX_6etdiGXuQWxe5pwbMC-8OYaUBElCTAX0cIokG2hNSh0bbWvT2kieUq-HacD-VPWtCe-OPj1o","token_type":"Bearer","expires_in":3600,"scope":""}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 20:16:31 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&q=my%20way&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spotify.com
+      Authorization:
+      - Bearer BQALp0cyWX_6etdiGXuQWxe5pwbMC-8OYaUBElCTAX0cIokG2hNSh0bbWvT2kieUq-HacD-VPWtCe-OPj1o
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 03 Jan 2020 20:16:32 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/search?query=my+way&type=track&offset=0&limit=1",
+            "items" : [ {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN",
+                  "id" : "7vk5e3vY1uw9plTHJAMwjN",
+                  "name" : "Alan Walker",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+                }, {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/74KM79TiuVKeVCqs8QtB0B",
+                  "id" : "74KM79TiuVKeVCqs8QtB0B",
+                  "name" : "Sabrina Carpenter",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:74KM79TiuVKeVCqs8QtB0B"
+                }, {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/329e4yvIujISKGKz1BZZbO"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/329e4yvIujISKGKz1BZZbO",
+                  "id" : "329e4yvIujISKGKz1BZZbO",
+                  "name" : "Farruko",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:329e4yvIujISKGKz1BZZbO"
+                } ],
+                "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/1bcvtuHyO79DNAOOhHEkEm"
+                },
+                "href" : "https://api.spotify.com/v1/albums/1bcvtuHyO79DNAOOhHEkEm",
+                "id" : "1bcvtuHyO79DNAOOhHEkEm",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/ab67616d0000b273d2aaf635815c265aa1ecdecc",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/ab67616d00001e02d2aaf635815c265aa1ecdecc",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/ab67616d00004851d2aaf635815c265aa1ecdecc",
+                  "width" : 64
+                } ],
+                "name" : "On My Way",
+                "release_date" : "2019-03-21",
+                "release_date_precision" : "day",
+                "total_tracks" : 1,
+                "type" : "album",
+                "uri" : "spotify:album:1bcvtuHyO79DNAOOhHEkEm"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/7vk5e3vY1uw9plTHJAMwjN"
+                },
+                "href" : "https://api.spotify.com/v1/artists/7vk5e3vY1uw9plTHJAMwjN",
+                "id" : "7vk5e3vY1uw9plTHJAMwjN",
+                "name" : "Alan Walker",
+                "type" : "artist",
+                "uri" : "spotify:artist:7vk5e3vY1uw9plTHJAMwjN"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B"
+                },
+                "href" : "https://api.spotify.com/v1/artists/74KM79TiuVKeVCqs8QtB0B",
+                "id" : "74KM79TiuVKeVCqs8QtB0B",
+                "name" : "Sabrina Carpenter",
+                "type" : "artist",
+                "uri" : "spotify:artist:74KM79TiuVKeVCqs8QtB0B"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/329e4yvIujISKGKz1BZZbO"
+                },
+                "href" : "https://api.spotify.com/v1/artists/329e4yvIujISKGKz1BZZbO",
+                "id" : "329e4yvIujISKGKz1BZZbO",
+                "name" : "Farruko",
+                "type" : "artist",
+                "uri" : "spotify:artist:329e4yvIujISKGKz1BZZbO"
+              } ],
+              "available_markets" : [ "AD", "AE", "AR", "AT", "AU", "BE", "BG", "BH", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JO", "JP", "KW", "LB", "LI", "LT", "LU", "LV", "MA", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "OM", "PA", "PE", "PH", "PL", "PS", "PT", "PY", "QA", "RO", "SA", "SE", "SG", "SK", "SV", "TH", "TN", "TR", "TW", "US", "UY", "VN", "ZA" ],
+              "disc_number" : 1,
+              "duration_ms" : 193797,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "NOG841901010"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/4n7jnSxVLd8QioibtTDBDq"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/4n7jnSxVLd8QioibtTDBDq",
+              "id" : "4n7jnSxVLd8QioibtTDBDq",
+              "is_local" : false,
+              "name" : "On My Way",
+              "popularity" : 84,
+              "preview_url" : "https://p.scdn.co/mp3-preview/a2b7d391b7082492253beea21178df5557a4f9bf?cid=b2ad8035ea94488bae4ddae508010abe",
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:4n7jnSxVLd8QioibtTDBDq"
+            } ],
+            "limit" : 1,
+            "next" : "https://api.spotify.com/v1/search?query=my+way&type=track&offset=1&limit=1",
+            "offset" : 0,
+            "previous" : null,
+            "total" : 58353
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 20:16:32 GMT
+recorded_with: VCR 5.0.0

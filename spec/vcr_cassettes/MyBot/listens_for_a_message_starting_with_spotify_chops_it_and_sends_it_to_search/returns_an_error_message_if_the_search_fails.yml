@@ -1,0 +1,115 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - accounts.spotify.com
+      Authorization:
+      - Basic YjJhZDgwMzVlYTk0NDg4YmFlNGRkYWU1MDgwMTBhYmU6ZGZmYjczZDg1ZjUxNDExMmIzOTAzZDcyOWY1YmNlYzg=
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Jan 2020 19:49:47 GMT
+      Content-Type:
+      - application/json
+      Set-Cookie:
+      - __Host-device_id=AQATS2e9n_gr3tSiqW_dfj8w8bqcJ4ozqzzoyDLiBB58pHd76mwjZrxmtCRaANkaRwzkgAmReug5Uf8aqNuHmUANebDL2fmBCRo;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
+      Server:
+      - envoy
+      X-Envoy-Upstream-Service-Time:
+      - '3'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Accept-Encoding
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"BQD3LJnEb51q6KTVTVM8iJM0EK-P2cFGKUsLV1cU9kkrcE8AKeLU2RxjetOFuRKZD0_5u1ILYHfa0Bebdgs","token_type":"Bearer","expires_in":3600,"scope":""}'
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 19:49:47 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&q=search%20engineasd%20vqwionbrd3498%2023i%20bn35rb13qt5%2031285%20t1432q&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.spotify.com
+      Authorization:
+      - Bearer BQD3LJnEb51q6KTVTVM8iJM0EK-P2cFGKUsLV1cU9kkrcE8AKeLU2RxjetOFuRKZD0_5u1ILYHfa0Bebdgs
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Fri, 03 Jan 2020 19:49:47 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/search?query=search+engineasd+vqwionbrd3498+23i+bn35rb13qt5+31285+t1432q&type=track&offset=0&limit=1",
+            "items" : [ ],
+            "limit" : 1,
+            "next" : null,
+            "offset" : 0,
+            "previous" : null,
+            "total" : 0
+          }
+        }
+    http_version: 
+  recorded_at: Fri, 03 Jan 2020 19:49:47 GMT
+recorded_with: VCR 5.0.0

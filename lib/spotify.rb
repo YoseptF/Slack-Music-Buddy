@@ -3,9 +3,11 @@
 require 'net/http'
 require 'uri'
 require 'json'
+require 'dotenv'
+Dotenv.load '../.env'
 
 class Spotify
-  def self.search(song_name = 'sixteen tons')
+  def self.search(song_name = 'hello adele')
     query = song_name.split(' ').join('%20')
     c_uri = URI.parse('https://accounts.spotify.com/api/token')
 
