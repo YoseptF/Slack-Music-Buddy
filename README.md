@@ -15,6 +15,13 @@ You can join the [**Example Inc. slack server**](https://join.slack.com/t/exampl
 ## Before running
 Remember adding your own .env before runnning the bot locally, if you are hosting it on heroku, change the env variables on the site too
 
+this is a example of how your .env should look like (or if you're reviewing the project you can contact me on slack to save some time ;3):
+```
+SLACK_API_TOKEN=YOUR_API
+YOUTUBE_API=YOUR_API
+SPOTIFY_API=YOUR_API
+```
+
 ---
 ## run command
   `rake deploy:run` or
