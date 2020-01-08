@@ -24,27 +24,27 @@
 ## <a id="yourself"></a>Test it yourself
 You can join the [**Example Inc. slack server**](https://join.slack.com/t/example-inc-hq/shared_invite/enQtODkyODYzMTE5OTU4LTdkYTgxZmVjNzY2MWJhMWY5NjRlZDJmMjdkOWNmMjI0N2M1ZDc5NGIyNjY0YzEwYmIyMGU2NmYzNDU4ODk4NzY) to test the bot yourself without downloading anything!!!
 
-(Keep in mind the bot is hosted on a free heroku account, so it sleeps 6 hours a day, from 12am to 6am timezone -6)
+(Keep in mind the bot is hosted on a free Heroku account, so it sleeps 6 hours a day, from 12 am to 6 am timezone -6)
 
 ---
 ## <a id="locally"></a>Test it locally
 
-- [ ] <a id="clone"></a>**First:** Clone the github repo to your machine
+- [ ] <a id="clone"></a>**First:** Clone the GitHub repo to your machine
 
 ```
 $ git clone git@github.com:YoseptF/Slack-Music-Buddy.git
 ```
 
-- [ ] <a id="install"></a>**Install the dependencies:** This project uses some gems, you can check what they are in `Gemfile`, to install them use:
+- [ ] <a id="install"></a>**Install the dependencies:** This project uses some gems, you can check what they are in `Gemfile`, to install them type:
 ```
 $ bundle install
 ```
 
-> ## <a id="env"></a>****Important! before run it****
+> ## <a id="env"></a>****Important! before running it****
 > 
-> Remember adding your own .env before runnning the bot locally, if you are > hosting it on heroku, change the env variables on the site too
+> Remember adding your own .env before running the bot locally, if you are hosting it on Heroku, change the env variables on the site too
 > 
-> this is a example of how your .env should look like (or if you're > reviewing the project you can contact me on slack to save some time ;3):
+> this is an example of how your .env should look like (or if you're reviewing the project you can contact me on slack to save some time ;3):
 > ```
 > SLACK_API_TOKEN=YOUR_API
 > YOUTUBE_API=YOUR_API
@@ -56,11 +56,11 @@ $ bundle install
 > - [Spotify](https://developer.spotify.com/dashboard/applications)
 > 
 
-- [ ] <a id="run"></a>**Then:** Open a terminal inside your folder an run
+- [ ] <a id="run"></a>**Then:** Open a terminal inside your folder and run
 ```
 $ rake deploy:run
 ```
-You should look a message like this:
+You should receive a message like this one:
 ![rake gif](./images/rake.gif)
 
 AND THAT'S IT, you can go to the channel now and invite the bot :D
