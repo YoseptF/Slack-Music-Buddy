@@ -12,6 +12,7 @@
   - #### [Install dependencies](#install)
   - #### [Add you .env if necesary](#env)
   - #### [Run the bot](#run)
+  - #### [Invite the bot to the channel](#invite)
 - ### [Run command](#runc)
 - ### [Slack commands](#slackc)
   - ### [Youtube](#yt)
@@ -63,7 +64,15 @@ $ rake deploy:run
 You should receive a message like this one:
 ![rake gif](./images/rake.gif)
 
-AND THAT'S IT, you can go to the channel now and invite the bot :D
+- [ ] <a id="invite"></a>**Finally:** Invite the bot to the channel you want it to be in
+
+![invite image](./images/invite.gif)
+
+AND THAT'S IT, you can go to the channel now and interact with the bot :D
+you can start with:
+```
+@Music Buddy help
+```
 
 ---
 ## <a id="runc"></a>run command
@@ -71,10 +80,6 @@ AND THAT'S IT, you can go to the channel now and invite the bot :D
   `heroku run rake deploy:run`
 ---
 ## <a id="slackc"></a>Commands on slack
----
-### Invite the bot to your channel
-
-![invite image](./images/invite.gif)
 
 ---
 ### <a id="yt"></a>Youtube
