@@ -5,7 +5,7 @@
 </div>
   </dl>
 
-# Navigation
+## Navigation
 - ### [Test it yourself](#yourself)
 - ### [Test it locally](#locally)
   - #### [Clone it](#clone)
@@ -55,7 +55,6 @@ $ bundle install
 > - [Youtube](https://console.developers.google.com/)
 > - [Spotify](https://developer.spotify.com/dashboard/applications)
 > 
-> .
 
 - [ ] <a id="run"></a>**Then:** Open a terminal inside your folder an run
 ```
