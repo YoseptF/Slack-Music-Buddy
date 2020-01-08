@@ -9,7 +9,7 @@
 - ### [Test it yourself](#yourself)
 - ### [Test it locally](#locally)
   - #### [Clone it](#clone)
-  - #### [Install dependencies it](#install)
+  - #### [Install dependencies](#install)
   - #### [Add you .env if necesary](#env)
   - #### [Run the bot](#run)
 - ### [Run command](#runc)
