@@ -25,11 +25,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 03 Jan 2020 20:16:31 GMT
+      - Wed, 08 Jan 2020 18:20:51 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - __Host-device_id=AQAz16OcTClS3RyMQ6XE6JtEroI2zlYVlCtVzc6sVSh26Jf_LnrYC58hcM6h2ZOnSL0a34uINVZ4dT0E16j51NUncczM4hqkhOo;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
+      - __Host-device_id=AQBucIBNNB6zxtfxrIYrLX41LMcOj57UnZxDDbMMr9F6bIleEmdU8HowIAywErD3Yjp6HuaMPrrPnsJzPK8ZyZ_tyJ64NxKQ_I8;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
       Server:
       - envoy
       X-Envoy-Upstream-Service-Time:
@@ -48,9 +48,9 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQALp0cyWX_6etdiGXuQWxe5pwbMC-8OYaUBElCTAX0cIokG2hNSh0bbWvT2kieUq-HacD-VPWtCe-OPj1o","token_type":"Bearer","expires_in":3600,"scope":""}'
+      string: '{"access_token":"BQDQLWQPFu795e8C9gNFRWSmzuk3IWokhiwhMCPj1YXWLYKevcX7zYceRVNFdJlMNpkXQtNekXdi8C1t2EY","token_type":"Bearer","expires_in":3600,"scope":""}'
     http_version: 
-  recorded_at: Fri, 03 Jan 2020 20:16:31 GMT
+  recorded_at: Wed, 08 Jan 2020 18:20:51 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&q=my%20way&type=track
@@ -67,7 +67,7 @@ http_interactions:
       Host:
       - api.spotify.com
       Authorization:
-      - Bearer BQALp0cyWX_6etdiGXuQWxe5pwbMC-8OYaUBElCTAX0cIokG2hNSh0bbWvT2kieUq-HacD-VPWtCe-OPj1o
+      - Bearer BQDQLWQPFu795e8C9gNFRWSmzuk3IWokhiwhMCPj1YXWLYKevcX7zYceRVNFdJlMNpkXQtNekXdi8C1t2EY
   response:
     status:
       code: 200
@@ -89,7 +89,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Fri, 03 Jan 2020 20:16:32 GMT
+      - Wed, 08 Jan 2020 18:20:51 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -201,7 +201,7 @@ http_interactions:
               "id" : "4n7jnSxVLd8QioibtTDBDq",
               "is_local" : false,
               "name" : "On My Way",
-              "popularity" : 84,
+              "popularity" : 83,
               "preview_url" : "https://p.scdn.co/mp3-preview/a2b7d391b7082492253beea21178df5557a4f9bf?cid=b2ad8035ea94488bae4ddae508010abe",
               "track_number" : 1,
               "type" : "track",
@@ -211,9 +211,9 @@ http_interactions:
             "next" : "https://api.spotify.com/v1/search?query=my+way&type=track&offset=1&limit=1",
             "offset" : 0,
             "previous" : null,
-            "total" : 58353
+            "total" : 58403
           }
         }
     http_version: 
-  recorded_at: Fri, 03 Jan 2020 20:16:32 GMT
+  recorded_at: Wed, 08 Jan 2020 18:20:51 GMT
 recorded_with: VCR 5.0.0
