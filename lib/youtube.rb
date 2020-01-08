@@ -1,34 +1,26 @@
 # frozen_string_literal: true
 
-require 'net/http'
-require 'uri'
 require 'json'
+require_relative 'http_request'
 require 'dotenv'
 Dotenv.load '../.env'
 class Youtube
   # recieves a string and
-  def self.youtube(search = 'beautifully')
+  def self.search(search = 'beautifully')
     query = search.split(' ').join('%20')
 
-    r = "q=#{query}&key=#{ENV['YOUTUBE_API']}"
-    complete = 'https://www.googleapis.com/youtube/v3/search?part=snippet&' + r
-    uri = URI.parse(complete)
-    request = Net::HTTP::Get.new(uri)
-    request['Accept'] = 'application/json'
+    complete_uri = 'https://www.googleapis.com/youtube/v3/' \
+    "search?part=snippet&q=#{query}&key=#{ENV['YOUTUBE_API']}"
 
-    req_options = {
-      use_ssl: uri.scheme == 'https'
-    }
+    response = MyHttp.get(complete_uri)
 
-    response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-      http.request(request)
-    end
+    search_results = JSON.parse(response.body)['items']
 
-    if JSON.parse(response.body)['items'].length.zero?
+    if search_results.length.zero?
       return "sorry I didn't find anything, can you be more specific :D?"
     end
 
-    video_id = JSON.parse(response.body)['items'][0]['id']['videoId']
+    video_id = search_results[0]['id']['videoId']
 
     "https://youtu.be/#{video_id}"
   end

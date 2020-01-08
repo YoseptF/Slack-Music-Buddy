@@ -25,11 +25,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 08 Jan 2020 18:20:50 GMT
+      - Wed, 08 Jan 2020 18:41:33 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - __Host-device_id=AQAUFkQBD-0_gU1wJs59sZ6JuaRCsqhpuw-YUzW7lNgcTh9f5DtWikP5hJxICBjC_iTtc_OVMo7OwxVxXVArlBjZguen50q6eQI;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
+      - __Host-device_id=AQAZeVlZYPDnM7q479o47E3vY1iIRCCFGW-ZIDP80c28fbnMJakWPhC5TULiWO-t74r2txAekVfnrvQCWr7hz5v0KiibtJ-Z0Y0;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
       Server:
       - envoy
       X-Envoy-Upstream-Service-Time:
@@ -48,9 +48,9 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQDgElIQGxqTKxXsFOPq6UmiH-6Znm3iUayrM1OQa4Rh5Q4zq6kpz7AQrI1zkOsYdGneLhKxoxMM8IlALHU","token_type":"Bearer","expires_in":3600,"scope":""}'
+      string: '{"access_token":"BQBcsD2RuKhmHTSmGfjKUxrCIvMgZjhV8BlcFrC7Z81dT_SU2-EQyxsc0cEiIDunsMcwjKJoXTf5my9OhZc","token_type":"Bearer","expires_in":3600,"scope":""}'
     http_version: 
-  recorded_at: Wed, 08 Jan 2020 18:20:50 GMT
+  recorded_at: Wed, 08 Jan 2020 18:41:33 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&q=crazy%20monkey%20banana&type=track
@@ -67,7 +67,7 @@ http_interactions:
       Host:
       - api.spotify.com
       Authorization:
-      - Bearer BQDgElIQGxqTKxXsFOPq6UmiH-6Znm3iUayrM1OQa4Rh5Q4zq6kpz7AQrI1zkOsYdGneLhKxoxMM8IlALHU
+      - Bearer BQBcsD2RuKhmHTSmGfjKUxrCIvMgZjhV8BlcFrC7Z81dT_SU2-EQyxsc0cEiIDunsMcwjKJoXTf5my9OhZc
   response:
     status:
       code: 200
@@ -89,7 +89,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Wed, 08 Jan 2020 18:20:51 GMT
+      - Wed, 08 Jan 2020 18:41:33 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -111,5 +111,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Wed, 08 Jan 2020 18:20:51 GMT
+  recorded_at: Wed, 08 Jan 2020 18:41:33 GMT
 recorded_with: VCR 5.0.0

@@ -5,15 +5,12 @@ require 'uri'
 
 class MyHttp
   # Makes an http request with an auth token
-  def self.my_request(text_url)
+  def self.get(text_url)
+    puts text_url
     uri = URI.parse(text_url)
 
-    request = Net::HTTP::Post.new(uri)
-    request['Authorization'] = "Basic #{token}"
-
-    request.set_form_data(
-      'grant_type' => 'client_credentials'
-    )
+    request = Net::HTTP::Get.new(uri)
+    request['Accept'] = 'application/json'
 
     req_options = {
       use_ssl: uri.scheme == 'https'

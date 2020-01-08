@@ -29,7 +29,7 @@ class MyBot < SlackRubyBot::Bot
   match(/^youtube\b.*$/i) do |client, data, _match|
     client.say(
       channel: data.channel,
-      text: Youtube.youtube(data.text.gsub('youtube ', ''))
+      text: Youtube.search(data.text.gsub('youtube ', ''))
     )
   end
 

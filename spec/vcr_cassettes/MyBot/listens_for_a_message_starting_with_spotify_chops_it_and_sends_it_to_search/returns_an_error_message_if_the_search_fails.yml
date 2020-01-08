@@ -25,15 +25,15 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 03 Jan 2020 19:49:47 GMT
+      - Wed, 08 Jan 2020 18:41:31 GMT
       Content-Type:
       - application/json
       Set-Cookie:
-      - __Host-device_id=AQATS2e9n_gr3tSiqW_dfj8w8bqcJ4ozqzzoyDLiBB58pHd76mwjZrxmtCRaANkaRwzkgAmReug5Uf8aqNuHmUANebDL2fmBCRo;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
+      - __Host-device_id=AQD6ezVvd6cWySA31MqSygNewVsd5RcondZ88yq8EPb8lbuJkaXlThgTui4gXX97AIz_qlZRAG5OVAzSscbn3NH5E-7BrtIvvt4;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly
       Server:
       - envoy
       X-Envoy-Upstream-Service-Time:
-      - '3'
+      - '4'
       Strict-Transport-Security:
       - max-age=31536000
       X-Content-Type-Options:
@@ -48,9 +48,9 @@ http_interactions:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"BQD3LJnEb51q6KTVTVM8iJM0EK-P2cFGKUsLV1cU9kkrcE8AKeLU2RxjetOFuRKZD0_5u1ILYHfa0Bebdgs","token_type":"Bearer","expires_in":3600,"scope":""}'
+      string: '{"access_token":"BQAqcBuaoDN9jjZPiTrCpn8XL4jfoO7D2RdEJjPtYOg-GX74Fx3D_IADVmcTVfhbxwVwdN4U7X6raSPRlLE","token_type":"Bearer","expires_in":3600,"scope":""}'
     http_version: 
-  recorded_at: Fri, 03 Jan 2020 19:49:47 GMT
+  recorded_at: Wed, 08 Jan 2020 18:41:31 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&q=search%20engineasd%20vqwionbrd3498%2023i%20bn35rb13qt5%2031285%20t1432q&type=track
@@ -67,7 +67,7 @@ http_interactions:
       Host:
       - api.spotify.com
       Authorization:
-      - Bearer BQD3LJnEb51q6KTVTVM8iJM0EK-P2cFGKUsLV1cU9kkrcE8AKeLU2RxjetOFuRKZD0_5u1ILYHfa0Bebdgs
+      - Bearer BQAqcBuaoDN9jjZPiTrCpn8XL4jfoO7D2RdEJjPtYOg-GX74Fx3D_IADVmcTVfhbxwVwdN4U7X6raSPRlLE
   response:
     status:
       code: 200
@@ -89,7 +89,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '604800'
       Date:
-      - Fri, 03 Jan 2020 19:49:47 GMT
+      - Wed, 08 Jan 2020 18:41:32 GMT
       Via:
       - 1.1 google
       Alt-Svc:
@@ -111,5 +111,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Fri, 03 Jan 2020 19:49:47 GMT
+  recorded_at: Wed, 08 Jan 2020 18:41:32 GMT
 recorded_with: VCR 5.0.0

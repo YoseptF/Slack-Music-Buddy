@@ -21,9 +21,9 @@ http_interactions:
       message: OK
     headers:
       Expires:
-      - Fri, 03 Jan 2020 19:49:22 GMT
+      - Wed, 08 Jan 2020 18:41:33 GMT
       Date:
-      - Fri, 03 Jan 2020 19:49:22 GMT
+      - Wed, 08 Jan 2020 18:41:33 GMT
       Cache-Control:
       - private, max-age=120, must-revalidate, no-transform
       Etag:
@@ -61,5 +61,5 @@ http_interactions:
          "items": []
         }
     http_version: 
-  recorded_at: Fri, 03 Jan 2020 19:49:22 GMT
+  recorded_at: Wed, 08 Jan 2020 18:41:33 GMT
 recorded_with: VCR 5.0.0
