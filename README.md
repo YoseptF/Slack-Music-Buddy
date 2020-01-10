@@ -4,6 +4,8 @@
 <h1>Your friendly neighbor, who knows a little bit too much about music</h1>
 </div>
   </dl>
+  
+[![Run on Repl.it](https://repl.it/badge/github/YoseptF/Slack-Music-Buddy)](https://repl.it/github/YoseptF/Slack-Music-Buddy)
 
 ## Navigation
 - ### [Test it yourself](#yourself)
